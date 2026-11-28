@@ -1,5 +1,5 @@
 /* Project data: one entry per tracked port or mod. */
-const CHECKED = "2026-11-24";
+const CHECKED = "2026-11-28";
 
 const PROJECTS = [
 {
@@ -20,6 +20,10 @@ const PROJECTS = [
   ],
   coming:"The author has confirmed <b>a brand-new speedway</b>, then <b>Ant Farm</b> (needs Sparx gameplay rebuilt, so it'll take longer), a new boss battle for the first homeworld, and Spyro 2-style level intros and outros. Later homeworlds would come as separate episodes.",
   releases:[
+    {v:"Update 5",date:"2026-11-28",when:"Nov 2026",title:"Winter Fairy Home",
+     lead:"A new playable area, which also becomes the title screen background.",
+     highlights:["<b>Winter Fairy Home</b> is playable, and is now the title screen backdrop.","Underwater caustics (light ripples) in swimmable areas."],
+     heads:[],fixes:["The thief in Market Mesa is faster"]},
     {v:"Update 4",date:"2026-11-03",title:"Market Mesa",
      lead:"A new level, plus quality-of-life tweaks. Logged as the October update; the November build went up Nov 3.",
      highlights:["<b>Market Mesa</b> is now a playable level.","Checkpoint fairies added to Lava Prairie.","After you finish the pumpkin and sandcastle quests, Spyro teleports straight to the fairy."],
@@ -57,6 +61,11 @@ const PROJECTS = [
   ],
   coming:"Known issue: a delay after downloading updates on Linux isn't fixed yet. Longer term: a full campaign check, Steam Deck sign-off, and story co-op graduating from beta.",
   releases:[
+    {v:"v0.7.2",date:"2026-11-28",title:"Rejoin online without restarting",
+     lead:"Online fixes, the Temporal Uplink's map is back, and richer default colours.",
+     highlights:["Host or join another online lobby without restarting the game.","The Temporal Uplink's holographic map is back, and holding it in What Lies Below no longer washes out the lighting.","Richer console-style contrast and colour by default.","Launcher 1.8: a redesigned look, a guided first install and tour, one Linux installer for x64 and ARM64, and an Update now button on Home."],
+     heads:["The legacy Mac OpenGL renderer keeps its old colours."],
+     fixes:["Team skull markers splitting or misaligning on different screen shapes","Mac launcher closing after an update (launcher 1.7.2)"]},
     {v:"v0.7.1",date:"2026-11-23",title:"Vulkan by default and solo Arcade online",
      lead:"Windows now uses Vulkan by default, and you can start online Arcade lobbies alone.",
      highlights:["Choose Vulkan or OpenGL in the launcher or in game.","Solo Arcade: start any Arcade mode in online or LAN lobbies with one player, with or without bots.","Controller turn speed's upper range is about a third faster."],
@@ -285,6 +294,14 @@ const PROJECTS = [
   ],
   coming:"Filling in the missing pieces of Reach, Combat Evolved and Halo 2 (some Reach mission scripts are still missing, and Halo 2's campaign is early). Eventually an open-source release.",
   releases:[
+    {v:"v0.10.11",date:"2026-11-26",title:"Full controller support and party voice",
+     lead:"Every menu works with a controller, and party voice chat is on by default.",
+     highlights:["<b>The controller works on every page:</b> menus, settings, lobbies, server browser, Theater, Forge and the scoreboard, with an on-screen keyboard for name fields.","Button prompts show the controller you're holding, per split-screen player.","Party voice is on by default, with per-channel volume and a relay for members who can't connect directly.","Parties stay together: restarting the game offers your party back, and a crashed leader gets the lead back."],
+     heads:["Experimental: use a controller and keyboard/mouse at the same time."],fixes:[]},
+    {v:"v0.10.10",date:"2026-11-25",title:"A new start-up screen, and 1,024 AI",
+     lead:"A loading screen with its own light sweep and chord, and room for far more AI.",
+     highlights:["The start-up screen shows a light sweeping across the title that follows the real loading, with a seven-note chord (in the spirit of Halo CE's loading sound, made by the game itself).","Games can hold up to <b>1,024 AI</b>, up from 256."],
+     heads:[],fixes:[]},
     {v:"v0.10.9",date:"2026-11-22",title:"Parties meet the lobby",
      lead:"Parties and lobbies work together much better, Forge gets new vehicle and hill options, and there are lots of fixes for Halo CE, Reach Invasion and the server browser.",
      highlights:["Your party shows in lobby lists and on the scoreboard, declined invites are reported, and parties survive the friends service restarting.","<b>SWITCH LOBBY</b> moves a lobby between Custom Games, Forge and Campaign.","Forge: King of the Hill hills can ride on vehicles, and each placed vehicle gets its own physics and health.","Theater can follow any player in first person.","A Riding look setting and a smoother view for passengers.","F12 hides or shows the chat box."],
@@ -361,7 +378,7 @@ const PROJECTS = [
   source:"GameBanana",
   game:"Mario Kart Wii · Wii or Dolphin (Riivolution) · by Kiwinner",
   blurb:"Adds 21 brand-new items to Mario Kart Wii, each with its own model, sounds and behavior, and reworks four of the originals. Every item works for you and the CPUs in Grand Prix, VS and (where it makes sense) Battle. It runs from your own copy of the game through Riivolution and never touches your original save.",
-  status:"<b>Very active:</b> released Oct 24, now on v1.1.2. About 10,500 downloads. Works with <b>every region</b> (PAL, NTSC-U, NTSC-J, Korean) on a real Wii or Dolphin. <b>Offline only:</b> online play and the Mario Kart Channel are disabled. Dolphin is recommended for Item Rain, which slows a real Wii down.",
+  status:"<b>Very active:</b> released Oct 24, now on v1.1.2. About 12,100 downloads. Works with <b>every region</b> (PAL, NTSC-U, NTSC-J, Korean) on a real Wii or Dolphin. <b>Offline only:</b> online play and the Mario Kart Channel are disabled. Dolphin is recommended for Item Rain, which slows a real Wii down.",
   features:[
     ["21 new items","Giant Banana, Bowser Shell, Boo, Ice Flower, Giga Mushroom, Feather, Banzai Bill, Chain Chomp, Kamek's Wand, Black Shell, Penguin Suit, Pull Star and more."],
     ["4 reworked classics","The Thunder Cloud becomes an attack, the Golden Mushroom one huge boost, the Fake Item Box a perfect disguise, and the Bob-omb blows up on impact. Each can be switched back to the original."],
@@ -607,6 +624,12 @@ const PROJECTS = [
   ],
   coming:"Steady fixes on main, including run-ahead work. Linux and macOS are still experimental.",
   releases:[
+    {v:"v0.5.4",date:"2026-11-27",title:"0.5.0 – 0.5.4: one account, three regions, less lag",
+     lead:"The biggest update yet: one shared account with SSBU Arena, official lobbies on three continents, much lower input lag, then four quick fix releases.",
+     highlights:["<b>One account with SSBU Arena:</b> sign in once in the launcher (Discord). Epic Online Services is gone, and matches go through the project's own relays.","Official lobbies in Europe, North America and now <b>South America</b>.","Mastery Points (GMP) replace GSP, with per-fighter leaderboards on the website.","Rollback: input is sent a frame earlier (shallower rollbacks), a smarter Auto input delay, and an in-match ping overlay.","Battle Arena IDs work again."],
+     perf:["Input delay down from 8 to 6 frames at 130 ms ping."],
+     heads:["Online play now needs you to sign in (Discord) in the launcher.","Known: online freezes when a Final Smash plays a video (Joker, Sephiroth)."],
+     fixes:["Many rollback desyncs (Local Wireless at 30 s left, name tags in Quickplay, a P2 pad giving no input)","Install failing with the standard plugins (0.5.1)","The most common GPU crash at the start of online matches (0.5.2)","Freeze when the other player leaves before the fight starts","Crash after an online match ends (0.5.4)"]},
     {v:"v0.4.1",date:"2026-11-18",title:"Online hotfix",
      lead:"Fixes v0.4.0's online problems.",
      highlights:["Online through Epic no longer gets stuck on connecting, or fails every Quickplay and room search at once."],
@@ -637,6 +660,12 @@ const PROJECTS = [
   ],
   coming:"Fixes for specific setups keep landing daily, such as dual-GPU laptops and older game versions.",
   releases:[
+    {v:"1.2.31",date:"2026-11-28",title:"1.2.25 – 1.2.31: faster, steadier, Intel Arc",
+     lead:"Seven releases: a big speed-up, a physics safety net, Intel Arc support and a run of hotfixes.",
+     highlights:["Physics never runs slower than 30 Hz, so frame dips no longer make bridges, scarecrows or triggers go missing.","Intel XeSS upscaling, and GPU stats in the F2 overlay.","VSync no longer swings between 60 and 40 FPS on high-refresh monitors.","Hold to tilt works with motion controls off."],
+     perf:["About 15-22% higher FPS on the main CPU-bound thread, from compiler optimisation (Windows and Linux).","Linux on AMD: Sky Garden no longer crashes, and about 11% more FPS."],
+     heads:["If you installed fresh on 1.2.25-1.2.29 and saw heavy stutter, update: the shader list was missing from those downloads (fixed in 1.2.30)."],
+     fixes:["1.2.27's launcher not starting on Windows (1.2.28)","Havok crash","Clearer setup errors"]},
     {v:"1.2.24",date:"2026-11-24",title:"F6 physics toggle and full RecompLauncher support",
      lead:"A hotkey to lock physics to the PS5's 60 Hz step, and complete RecompLauncher integration.",
      highlights:["Press <b>F6</b> in game to pin physics to 60 Hz, for physics-sensitive spots like the Hieroglitch Pyramid volcano door when your frame rate dips.","RecompLauncher can now set up the game, change 17 settings, and open logs, saves and mods folders."],
@@ -674,6 +703,11 @@ const PROJECTS = [
   ],
   coming:"0.7.3 is already in the code: a save editor, choosing your starter, Gen 4 faces and cries, and more abilities.",
   releases:[
+    {v:"0.8.1",date:"2026-11-28",title:"0.7.3 – 0.8.1: save editor, Arceus Plates and an Android beta",
+     lead:"Seven releases in five days. Highlights below; most are additions, plus online fixes.",
+     highlights:["<b>Save editor</b> in the launcher, and <b>choose your starter</b> instead of Eevee (0.7.3).","Fairy type, and Gen 5-7 Pokémon at the Poké Spots, including Alolan forms (0.7.5).","More Shadow Pokémon as a percentage, up to 117 on the USA disc (0.7.6).","Feebas evolves with a Prism Scale, and Gen 5-7 ability descriptions (0.7.7).","<b>0.8.0:</b> an HD texture maker, a paged prize desk with Mega Stones and the 17 Arceus Plates, dozens more forms (Giratina Origin, Kyurem Black/White, Vivillon patterns...), randomizer v9, a stream overlay, save states, and an Android beta."],
+     heads:["Online needs both players on the same version (0.7.5 changed battles), and on the same re-made Ultra Sun/Moon pack.","After 0.7.3 and 0.7.4, press Make again once on the Ultra Sun/Moon card."],
+     fixes:["Online: a fainted Pokémon being sent back out, and only two team members fighting","French version closing at start with Gen 4-7 Pokémon in the save","Munchlax freezing battles","0.8.1: Make models and Gen 4 pack crashing on Windows in 0.8.0"]},
     {v:"0.7.2",date:"2026-11-24",title:"Crash fix for Kaminko's House",
      lead:"A quick fix release for 0.7.1. The developer asks everyone to update.",
      highlights:[],heads:["The launcher offers 0.7.2 by itself (Disc page, Check now)."],
@@ -735,6 +769,11 @@ const PROJECTS = [
   ],
   coming:"Test builds go out between releases to check fixes from player reports.",
   releases:[
+    {v:"0.8.0-beta.1",date:"2026-11-27",title:"0.7.0 – 0.8.0: guests in Survival, and proper widescreen menus",
+     lead:"Link and Heihachi finally show up in Survival, Time Attack and Extra Arcade, and widescreen menus stop stretching.",
+     highlights:["Assign each gamepad to a player in the launcher. A Steam Deck's own controls can be set to Not used.","Link and Heihachi now appear in Extra Survival, Extra Time Attack and Extra Arcade, on their own stage, as on GameCube and PS2.","In widescreen, menus and select screens now show in 4:3 with black sides, so portraits aren't squashed; fights stay 16:9."],
+     heads:["Rebuild the guests after updating (the launcher asks) for sharper GameCube and PS2 pictures."],
+     fixes:["Frame meter counting paused time","Specks on Heihachi's portraits and textures","Survival results leaving out wins over Link and Heihachi","Boot screen specks on Android phones with Adreno graphics"]},
     {v:"0.6.0-beta.1",date:"2026-11-23",title:"Weapon Master saving fix and Museum cleanup",
      lead:"Fixes a crash while saving in Weapon Master, and tidies up the Museum.",
      highlights:["The mouse cursor hides after 2 seconds still.","A Discord link on the launcher's Online page for finding players."],
@@ -796,6 +835,10 @@ const PROJECTS = [
   ],
   coming:"Weekly Sunday releases are planned, with community pull requests.",
   releases:[
+    {v:"v0.2.77",date:"2026-11-28",title:"Every dump unlocks everything",
+     lead:"Dumps missing a PlayGo file no longer keep HD, Fury and 2048 locked.",
+     highlights:["HD, HD Fury and all of 2048 unlock with every dump.","The touchpad skips your own songs in a race, too."],
+     heads:[],fixes:["Linux launcher menu scrolling through options by itself"]},
     {v:"v0.2.76",date:"2026-11-14",title:"Upscaling at 4K and in Pro mode",
      lead:"The Upscaling setting now works at 4K and in PS4 Pro mode.",
      highlights:[],perf:["DLSS Balanced in Pro mode at 4K: about 64 FPS instead of 19 on an RTX 4070 Laptop."],heads:[],fixes:[]},
