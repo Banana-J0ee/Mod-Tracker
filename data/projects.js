@@ -864,6 +864,40 @@ const PROJECTS = [
   ]
 },
 {
+  id:"mk64-pc-ultimate",
+  name:"Mario Kart 64 PC Ultimate",
+  repo:"Ricky69Gameplays69Caballo/Mario-Kart-64-PC-Ultimate",
+  img:"assets/img/mk64u.jpg",
+  game:"Mario Kart 64 (N64) · Windows (Linux, macOS untested)",
+  blurb:"A souped-up fork of SpaghettiKart, the Mario Kart 64 PC port, by YouTuber Ricky Gameplays. It turns MK64 into a party machine: up to 16 local players, huge race grids of CPU racers, online play, and switchable character sets taken from popular N64 kart mods. You need your own US Mario Kart 64 ROM.",
+  status:"<b>Active, with online in beta.</b> Releases have come about weekly since Nov 16, the latest today. Windows is the tested platform; Linux and macOS builds haven't been tested. The extended multiplayer, Battle AI and some course changes are still experimental.",
+  features:[
+    ["16 players","Up to 16 local players in Grand Prix, VS and Battle, on one to three monitors, with bots filling the grid."],
+    ["Giant grids","Custom CC and race grids of up to 4,096 racers, and up to 128 in Battle."],
+    ["Online (beta)","Host and join, with local split-screen players, match voting and host controls."],
+    ["Extra character sets","Pokémon, Dragon Ball, The Simpsons, GTA San Andreas, Evangelion, Angry Birds and more, each switchable, plus kart classes that change weight and handling."],
+    ["AFK takeover","Idle players hand over to a bot, and get control back the moment they touch the controller."],
+    ["Quality of life","Adjustable minimap, FPS counter, hold Tab to fast-forward, 21:9 menus, and extra courses from Mario Kart 64 Amped Up and Deluxe."]
+  ],
+  coming:"In development and not released yet: widescreen menu artwork and more character-set switches.",
+  releases:[
+    {v:"v0.97",date:"2026-11-28",title:"Jotaro, DIO and 128-racer Battles",
+     lead:"New characters, bigger Battles, and volume controls (Windows only).",
+     highlights:["<b>Jotaro and DIO</b> join the roster, with select-screen animations, voice lines and race portraits.","Battle supports up to 128 racers, with separate controls for extra racers.","Track music and player voice volume controls (voices up to 10x)."],
+     perf:["The DirectX 11 jitter fix is back, with better performance diagnostics."],
+     heads:["The original 21-shell cleanup limit is gone, for larger races.","This release is Windows only."],
+     fixes:["Solo race leaderboard","Retry now restores the original starting grid"]},
+    {v:"v0.95",date:"2026-11-24",title:"Online multiplayer (beta)",
+     lead:"Online play arrives, as a beta.",
+     highlights:["Host and guest online play, with local split-screen players, match voting, usernames and host controls.","Kart class choice on the character select screen (L or R).","Updates to Sandy Slide, Yoshi's Riverbed, Neo Bowser City, SMW Raceway, GCN Mario Circuit and Luigi Raceway."],
+     heads:["Online is a beta: expect bugs, and everyone needs the same game version."],fixes:[]},
+    {v:"v0.9",date:"2026-11-16",title:"Ultimate Edition",
+     lead:"The first release under the Ultimate name.",
+     highlights:["Up to 16 local players, CPU racers and AFK takeover.","Switchable character sets: Pokémon, GTA San Andreas, The Simpsons, Slasher Kart, Evangelion and Angry Birds.","Custom CC and race grids of up to 4,096 racers.","21:9 menus and more split-screen and multi-monitor options."],
+     heads:[],fixes:[]}
+  ]
+},
+{
   id:"ctr-nf-pc",
   img:"assets/img/ctr.jpg",
   name:"CTR Nitro-Fueled PC",
